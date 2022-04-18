@@ -10,7 +10,6 @@ sudo docker network rm sawork-2022
 echo "waiting for the containers to be deleted..."; sleep 10s
 
 #删除所有下载的微服务镜像
-sudo docker rmi registry.cn-hangzhou.aliyuncs.com/sawork-2022/pos-discovery:test
 sudo docker rmi registry.cn-hangzhou.aliyuncs.com/sawork-2022/pos-products:test
 sudo docker rmi registry.cn-hangzhou.aliyuncs.com/sawork-2022/pos-carts:test
 sudo docker rmi registry.cn-hangzhou.aliyuncs.com/sawork-2022/pos-frontend:test

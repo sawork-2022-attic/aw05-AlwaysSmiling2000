@@ -8,7 +8,7 @@
 
 ## 运行方法
 
-首先需要启动 docker 服务，并且新建一个 swarm：
+首先需要把项目根目录下的 nginx.conf 文件里配置的 server 项里面的 `kali` 换成你的主机名（或实际 IP 地址），然后运行下面的指令：
 
 ```shell
 #启动 docker 服务器
