@@ -41,7 +41,7 @@ docker swarm 说起来比较复杂，它的 routing mesh 提供了容器发现�
 
 这张图来自 docker 官方文档，里面有关于 docker swarm 和 overlay network 的详细描述，以及如何使用 docker service 来管理微服务。其中的 HAProxy 被我换成了 nginx（运行在 localhost:8080），然后如果你只在一台主机上运行所有微服务的话，下面的三个方框就只有一个。方框里面有我们的 gateway、products、carts 和 frontend 实例。
 
-这张图说的是，同一个 swarm 集群的任何一台主机上的任何一个微服务实例，都可以通过 http://<service_name>:<service_publish_port> 的方式来调用其它的微服务实例。这个 http 请求会被 swarm load balancer 自动分发到整个容器集群中出于 active 状态（有 health check）的某个容器实例上。
+这张图说的是，同一个 swarm 集群的任何一台主机上的任何一个微服务实例，都可以通过 http://<service_name>:<service_publish_port> 的方式来调用其它的微服务实例。这个 http 请求会被 swarm load balancer 自动分发到整个容器集群中处于 active 状态（有 health check）的某个容器实例上。
 
 docker swarm 说起来太多了，推荐阅读官方文档（如果感兴趣的话）；要是镜像 pull 不下来，就当这个特性不存在吧。
 
