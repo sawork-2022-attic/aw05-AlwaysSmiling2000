@@ -9,17 +9,6 @@ spring:
     ehcache:
       config: classpath:ehcache/conf.xml
 
-eureka:
-  instance:
-    instance-id: pos-products8001
-  client:
-#    需要从 Eureka 服务器获取服务注册信息（默认是 true）
-    fetch-registry: true
-    register-with-eureka: true
-    service-url:
-#      Eureka 服务器的地址
-      defaultZone: http://localhost:7001/eureka
-
 resilience4j:
   circuitbreaker:
     instances:

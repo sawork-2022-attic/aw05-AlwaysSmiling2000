@@ -14,7 +14,7 @@ import java.util.List;
 @Service
 public class CartServiceImpl implements CartService {
 
-    private static final String POS_PRODUCTS_URL = "http://pos-products/api";
+    private static final String POS_PRODUCTS_URL = "http://pos-gateway:6001/api";
 
     private final CartRepository cartRepository;
 

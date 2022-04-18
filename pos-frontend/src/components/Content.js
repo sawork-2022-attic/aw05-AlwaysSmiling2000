@@ -15,7 +15,7 @@ export default function Content(props) {
     // React 推荐在 hooks 内部定义异步函数调用
     const loadProducts = async () => {
       await fetch(
-        "http://localhost:6001/api/products",
+        "http://localhost:8080/api/products",
         {
           method: "GET"
         }

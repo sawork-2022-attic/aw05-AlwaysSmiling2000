@@ -1,0 +1,13 @@
+/src/
+
+/Dockerfile
+
+/pom.xml
+
+/pos-carts.iml
+
+/.dockerignore
+
+/target/
+
+!/target/pos-carts-0.0.1.jar

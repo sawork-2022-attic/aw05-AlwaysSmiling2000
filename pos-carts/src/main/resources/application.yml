@@ -8,15 +8,6 @@ spring:
     ehcache:
       config: classpath:ehcache/conf.xml
 
-eureka:
-  instance:
-    instance-id: pos-carts9001
-  client:
-    fetch-registry: true
-    register-with-eureka: true
-    service-url:
-      defaultZone: http://localhost:7001/eureka
-
 resilience4j:
   circuitbreaker:
     instances:

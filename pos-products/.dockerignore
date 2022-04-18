@@ -1,0 +1,13 @@
+/src/
+
+/.dockerignore
+
+/Dockerfile
+
+/pom.xml
+
+/pos-products.iml
+
+/target/
+
+!/target/pos-products-0.0.1.jar

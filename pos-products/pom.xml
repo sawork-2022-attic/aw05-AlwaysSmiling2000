@@ -38,12 +38,6 @@
             <artifactId>jsoup</artifactId>
         </dependency>
 
-<!--        服务注册与发现-->
-        <dependency>
-            <groupId>org.springframework.cloud</groupId>
-            <artifactId>spring-cloud-starter-netflix-eureka-client</artifactId>
-        </dependency>
-
 <!--        服务熔断和降级-->
         <dependency>
             <groupId>org.springframework.cloud</groupId>

@@ -1,0 +1,13 @@
+/src/
+
+/.dockerignore
+
+/Dockerfile
+
+/pom.xml
+
+/pos-gateway.iml
+
+/target/
+
+!/target/pos-gateway-0.0.1.jar
